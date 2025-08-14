@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { store } from '../store/index';
 
-const API_URL = 'http://localhost:5001/api'; // Your backend URL
+const API_URL = 'https://snippetcolab.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,
