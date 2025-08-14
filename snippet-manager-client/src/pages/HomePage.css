@@ -1,0 +1,109 @@
+/* src/pages/HomePage.css */
+
+.homepage-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.homepage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.homepage-header h1 {
+  margin: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  font-size: 2.5rem;
+}
+
+.btn-create-snippet {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.btn-create-snippet:hover {
+  background-color: var(--accent-hover-color);
+}
+
+.loader {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+
+.snippet-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* --- UPDATED SNIPPET CARD STYLES --- */
+.snippet-card {
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  background-color: var(--card-bg-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 180px; /* Give cards a consistent minimum height */
+}
+
+.snippet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.snippet-card h3 {
+  margin-top: 0;
+  color: var(--accent-color);
+  font-size: 1.4rem;
+}
+
+.snippet-card p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1; /* Allows this element to grow, pushing the badge down */
+}
+
+.status-badge {
+  display: inline-block;
+  align-self: flex-start; /* Aligns badge to the left */
+  padding: 0.3rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--font-body);
+  color: white;
+}
+/* --- End of updated styles --- */
+
+.status-draft { background-color: #9E9E9E; } /* Muted Gray */
+.status-in-review { background-color: #FFA726; } /* Muted Orange/Gold */
+.status-approved { background-color: #66BB6A; } /* Muted Sage Green */
+
+.empty-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 3rem;
+  background-color: var(--card-bg-color);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}

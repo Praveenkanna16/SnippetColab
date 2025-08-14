@@ -1,0 +1,37 @@
+/* src/index.css */
+
+/* --- Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap');
+
+/* --- Color & Font Theme Variables --- */
+:root {
+  --bg-color: #FDF6E3; /* Soft, creamy paper background */
+  --card-bg-color: #F5EFE6; /* Slightly darker for cards/forms */
+  --primary-text-color: #4A4A4A; /* Warm, dark gray instead of black */
+  --accent-color: #D87D4A; /* Earthy, warm terracotta/orange */
+  --accent-hover-color: #c56b3a;
+  --border-color: #D7CCC8; /* Muted, soft border color */
+  
+  --font-heading: 'Lora', serif;
+  --font-body: 'Nunito Sans', sans-serif;
+}
+
+/* --- Global Styles --- */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--primary-text-color);
+}

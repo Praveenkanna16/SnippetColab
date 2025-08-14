@@ -1,0 +1,49 @@
+
+/* Add these new styles to src/pages/SnippetDetailPage.css */
+
+.comment-form {
+  margin-bottom: 2rem;
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 60px;
+}
+
+.comment-form button {
+  display: block;
+  margin-top: 0.75rem;
+  margin-left: auto; /* Aligns button to the right */
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+  background-color: var(--accent-hover-color);
+}
+
+.comment span {
+  font-size: 0.8rem;
+  color: #888;
+  margin-left: 0.5rem;
+}
+
+.error-message.small {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
